@@ -1,0 +1,141 @@
+---
+title: "Proposal"
+---
+
+# Introduction
+
+Over the course of time, the persistent occurrence of illegal fishing has consistently inflicted significant damage upon the delicate balance of biodiversity. Recognizing the importance of this matter, FishEye, an international non-profit organization, has taken on the mission of countering illegal, unreported, and unregulated (IUU) fishing practices.
+
+Our group has been given three distinct mini challenges, each accompanied by its own comprehensive dataset. These challenges have been designed to facilitate the identification of potential entities that may have participated in illicit fishing activities.
+
+By leveraging our visual analytics methods and processing these datasets, we aim to assist FishEye to combat and deter such harmful practices, ultimately safeguarding the precious marine ecosystems that are vital for the survival of countless species.
+
+# Motivation
+
+Our group will be developing an interactive application using R Shiny to incorporate our findings from one of the mini challenges given by FishEye. With this application, we aim to provide users with an engaging and user-friendly experience, helping them better understand and visualize potential patterns of illegal fishing that might not be apparent from the raw data alone.
+
+The visualizations we have created through our analysis also serve as valuable evidence to highlight companies that may require further investigation. This interactive tool will contribute to FishEye's efforts in countering illegal fishing and safeguarding our marine ecosystems.
+
+# Problems to be addressed
+
+With reference to Mini-Challenge 3 of VAST Challenge 2023 and by using appropriate static and interactive statistical graphics methods, we will be revealing the questions:
+
+**Tasks and Questions**
+
+Use visual analytics to understand patterns of groups in the knowledge graph and highlight anomalous groups.
+
+1.  Use visual analytics to identify anomalies in the business groups present in the knowledge graph.
+
+2.  Develop a visual analytics process to find similar businesses and group them. This analysis should focus on a business\'s most important features and present those features clearly to the user.
+
+3.  Measure the similarity of businesses that you group in the previous question. Express confidence in your groupings visually.
+
+4.  Based on your visualizations, provide evidence for or against the case that anomalous companies are involved in illegal fishing. Which business groups should FishEye investigate further?
+
+# Data Description
+
+The graph format is a json format intended to match d3's node-link format and be compatible with networkx.node_link_graph. At the root-level, it is a dictionary with graph-level properties specified as keys (directed, mulitgraph, graph). The nodes and links keys each provide a dictionary of the nodes and links respectively. The nodes entries that must include an id key that is unique for each node. The links entries include source and target keys that refer to node id values. All other keys provided in node and link dictionaries are attributes for that node or link.
+
+There are 27,622 nodes, 24,038 edges, and 7,794 connected components.
+
+![](/images/data%20description-01.jpg)
+
+# Methodology
+
+Below are the proposed methodologies that could be used in our ShinyApp. However, they may vary subject to changes upon completion of the final work.
+
+[**Identify anomalies in the business group**]{.underline}
+
+Use data exploration techniques in both of the node and edge data frames. Attributes like "revenue_omu", "country", and "product_services" are explored to derive a general census of the data.
+
+Since the node and edges data frames are given, a network graph to illustrate node link relationships can be charted to get a foundational sense of what the data is like. Given that the challenge data is undirected, the in-degree and the outdegree of a node is less of our concern.
+
+[**Find and group similar businesses:**]{.underline}
+
+Some text analytics techniques are applied to filter out the text in the product services to identify the product that the node is transacting. Since we are only interested in fisheries, we would be keeping records with keywords such as \'seafood\' and \'fish\' and ignoring the rest which are irrelevant.
+
+In this way we are filtering out the business entities and grouping them according to how similar the products are.
+
+[**Measure similarity and express confidence in groupings:**]{.underline}
+
+There are various types of similarity measures that we can try to explore for example, cosine similarity, jaccard similarity etc. As the project progresses to this stage, we would identify the most suitable similarity measure here and apply it.
+
+Edge weight can represent the similarity or dissimilarity between businesses using edge thickness, color intensity, or opacity. This visual encoding can indicate the strength of similarity or dissimilarity between groups.
+
+[**Provide evidence for or against illegal fishing:**]{.underline}
+
+In this phase, we will be trying to identify companies that exhibit irregularities. This could potentially be in terms of the product that the company services, irregularities in their revenue and perhaps the country in which it engages its activity. The main point of this task is to flag companies which might have potentially conducted illegal trading activities.
+
+A network graph is one way to show the relationships between businesses and suspected illegal activities. What we expect is that these suspicious nodes will link us to products or people type who are suspicious. From there, we might be able to identify other suspicious nodes if they are connected in one way or another.
+
+# Proposed graphical analysis
+
+This portion of the project is subject to changes and eventual completion of take-home exercise 3.
+
+We would expect three main types of diagrams to be available in our analysis. (Figures below are suggested sample diagrams)
+
+Descriptive:
+
+This would be especially useful in the EDA stage to get the initial census of the different variables in the data. For example, source, target type, revenue, etc.
+
+Example: BarCharts
+
+![](/images/Picture1.png)
+
+Statistical:
+
+This would be helpful in helping us to address any hypothesis that we have during our analysis of the data. For example, mean value of products etc.
+
+Example: ViolinPlot
+
+![](/images/Picture2.png)
+
+Network graph / Ego network:
+
+This would be useful in helping us to visualize potential businesses that have similar activities or products.
+
+Example: Clusters
+
+![](/images/Picture3.png)
+
+# Suggested Shiny app layout
+
+Panel 1:
+
+Introduce the background and FishEye International organization.
+
+Show their focus on countering illegal, unreported, and unregulated (IUU) fishing.
+
+Panel 2:
+
+FishEye International receives access to an international finance corporation's database on fishing-related companies.
+
+Show a representation of a database with various company information.
+
+Panel 3:
+
+Transforms the database into a knowledge graph.
+
+Show the transformation process with the database turning into a dynamic graph.
+
+Panel 4:
+
+Extracts word knowledge and seeks a visual analytics approach to better understand fishing business anomalies.
+
+Show a sketch of the data wrangling process.
+
+Panel 5:
+
+Implement the new visual analytics approach and analyse.
+
+Explore the knowledge graph and identify similar business groups.
+
+Panel 6:
+
+Leverage the knowledge graph and visual analytics approach to identify more anomalies and provide evidence.
+
+Show multiple anomalies being identified and flagged for further investigation.
+
+Panel 7:
+
+Conclusion of the storyboard, highlighting the importance and positive impact of the visual analytics approach developed.

@@ -2,10 +2,12 @@
 title: "ISSS608 Group 7 ShinyApp Project"
 ---
 
-This is a Quarto website.
+## **Overview**
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+The purpose of the project is to provide students first hand experience on building web-enabled visual analytics application by using R Shiny. It aims to **democratize data and analytics**. Hence, the application focuses and emphasises on **interactivity** and effective integration of techniques from **data analytics** and **data visualization**.
 
-```{r}
-1 + 1
-```
+A project may involve developing new methods or implementing visual analytics system to support analytic tasks in specific domains. Alternatively, a project may be in the form of application development by integrating analytical tools within a visual analytics environment. Students are encouraged to focus on research topics that are relevant to their field of study. It should address a concrete visual analytics problem and should propose a novel and creative solution.
+
+## **Project Topic**
+
+This term the topic of Visual Analytics Project will be based on [VAST Challenge 2023](https://vast-challenge.github.io/2023/). The are three challenges provided. Teams are required to choose one of the Challenge and build a Shiny Application to answer the questions of the Challenge.

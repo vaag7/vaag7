@@ -5,9 +5,21 @@ website:
   title: "ISSS608 VAA G7"
   navbar:
     left:
+      - text: Proposal
+        menu: 
+          - text: Proposal
+            href: proposal.qmd
+         
+      - text: Group Project
+        menu: 
+          - text: R shinny Project
+            href: xx
+
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
 
 format:
   html:
