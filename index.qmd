@@ -1,5 +1,5 @@
 ---
-title: "vaag7"
+title: "ISSS608 Group 7 ShinyApp Project"
 ---
 
 This is a Quarto website.
