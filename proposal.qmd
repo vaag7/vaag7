@@ -26,7 +26,7 @@ Use visual analytics to understand patterns of groups in the knowledge graph and
 
 1.  Use visual analytics to identify anomalies in the business groups present in the knowledge graph.
 
-2.  Develop a visual analytics process to find similar businesses and group them. This analysis should focus on a business\'s most important features and present those features clearly to the user.
+2.  Develop a visual analytics process to find similar businesses and group them. This analysis should focus on a business's most important features and present those features clearly to the user.
 
 3.  Measure the similarity of businesses that you group in the previous question. Express confidence in your groupings visually.
 
@@ -52,7 +52,7 @@ Since the node and edges data frames are given, a network graph to illustrate no
 
 [**Find and group similar businesses:**]{.underline}
 
-Some text analytics techniques are applied to filter out the text in the product services to identify the product that the node is transacting. Since we are only interested in fisheries, we would be keeping records with keywords such as \'seafood\' and \'fish\' and ignoring the rest which are irrelevant.
+Some text analytics techniques are applied to filter out the text in the product services to identify the product that the node is transacting. Since we are only interested in fisheries, we would be keeping records with keywords such as 'seafood' and 'fish' and ignoring the rest which are irrelevant.
 
 In this way we are filtering out the business entities and grouping them according to how similar the products are.
 

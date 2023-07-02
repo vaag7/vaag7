@@ -5,15 +5,17 @@ website:
   title: "ISSS608 VAA G7"
   navbar:
     left:
-      - text: Proposal
-        menu: 
-          - text: Proposal
-            href: proposal.qmd
+      - href: proposal.qmd
+        text: Proposal
          
-      - text: Group Project
-        menu: 
-          - text: R shinny Project
-            href: xx
+      - href: https://isss608-vaa-sm.shinyapps.io/shiny1/
+        text: R shinyApp
+            
+      - href: poster.pdf
+        text: Poster
+        
+      - href: userguide.pdf
+        text: User Guide
 
     right:
       - href: index.qmd
@@ -23,7 +25,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: lux
     css: styles.css
     toc: true
 

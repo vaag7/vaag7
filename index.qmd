@@ -11,3 +11,17 @@ A project may involve developing new methods or implementing visual analytics sy
 ## **Project Topic**
 
 This term the topic of Visual Analytics Project will be based on [VAST Challenge 2023](https://vast-challenge.github.io/2023/). The are three challenges provided. Teams are required to choose one of the Challenge and build a Shiny Application to answer the questions of the Challenge.
+
+## Github link
+
+[![](images/download.png){width="68"}](https://github.com/vaag7/vaag7)
+
+## Special thanks to
+
+Our Mentor:
+
+[**Prof KAM Tin Seong**](https://faculty.smu.edu.sg/profile/kam-tin-seong-486)
+
+Full-time Faculty, SMU
+
+Associate Professor of Information Systems (Practice)

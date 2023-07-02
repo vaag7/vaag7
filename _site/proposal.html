@@ -79,28 +79,22 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-proposal" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Proposal</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-proposal">    
-        <li>
-    <a class="dropdown-item" href="./proposal.html">
- <span class="dropdown-text">Proposal</span></a>
+  <li class="nav-item">
+    <a class="nav-link active" href="./proposal.html" aria-current="page">
+ <span class="menu-text">Proposal</span></a>
   </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-group-project" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Group Project</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-group-project">    
-        <li>
-    <a class="dropdown-item" href="./xx">
- <span class="dropdown-text">R shinny Project</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="https://isss608-vaa-sm.shinyapps.io/shiny1/">
+ <span class="menu-text">R shinyApp</span></a>
   </li>  
-    </ul>
-  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./poster.pdf">
+ <span class="menu-text">Poster</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./userguide.pdf">
+ <span class="menu-text">User Guide</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -174,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Use visual analytics to understand patterns of groups in the knowledge graph and highlight anomalous groups.</p>
 <ol type="1">
 <li><p>Use visual analytics to identify anomalies in the business groups present in the knowledge graph.</p></li>
-<li><p>Develop a visual analytics process to find similar businesses and group them. This analysis should focus on a business's most important features and present those features clearly to the user.</p></li>
+<li><p>Develop a visual analytics process to find similar businesses and group them. This analysis should focus on a business’s most important features and present those features clearly to the user.</p></li>
 <li><p>Measure the similarity of businesses that you group in the previous question. Express confidence in your groupings visually.</p></li>
 <li><p>Based on your visualizations, provide evidence for or against the case that anomalous companies are involved in illegal fishing. Which business groups should FishEye investigate further?</p></li>
 </ol>
@@ -192,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Use data exploration techniques in both of the node and edge data frames. Attributes like “revenue_omu”, “country”, and “product_services” are explored to derive a general census of the data.</p>
 <p>Since the node and edges data frames are given, a network graph to illustrate node link relationships can be charted to get a foundational sense of what the data is like. Given that the challenge data is undirected, the in-degree and the outdegree of a node is less of our concern.</p>
 <p><u><strong>Find and group similar businesses:</strong></u></p>
-<p>Some text analytics techniques are applied to filter out the text in the product services to identify the product that the node is transacting. Since we are only interested in fisheries, we would be keeping records with keywords such as 'seafood' and 'fish' and ignoring the rest which are irrelevant.</p>
+<p>Some text analytics techniques are applied to filter out the text in the product services to identify the product that the node is transacting. Since we are only interested in fisheries, we would be keeping records with keywords such as ‘seafood’ and ‘fish’ and ignoring the rest which are irrelevant.</p>
 <p>In this way we are filtering out the business entities and grouping them according to how similar the products are.</p>
 <p><u><strong>Measure similarity and express confidence in groupings:</strong></u></p>
 <p>There are various types of similarity measures that we can try to explore for example, cosine similarity, jaccard similarity etc. As the project progresses to this stage, we would identify the most suitable similarity measure here and apply it.</p>
