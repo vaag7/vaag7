@@ -8,7 +8,7 @@ website:
       - href: proposal.qmd
         text: Proposal
          
-      - href: https://isss608-vaa-sm.shinyapps.io/shiny1/
+      - href: https://smhan.shinyapps.io/g7shiny/
         text: R shinyApp
             
       - href: poster.pdf
